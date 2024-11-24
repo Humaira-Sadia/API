@@ -4,12 +4,12 @@
         {
             "src": "main.py",
             "use": "@vercel/python",
-            "config": { "maxLamdaSize": "15mb"}
+            "config": { "maxLambdaSize": "15mb" }
         }
     ],
     "routes": [
-        { "source": "/(.*)",
-         "destination": "/main.py" 
+        { "src": "/(.*)",
+         "dest": "/main.py" 
         }
     ]
 }
